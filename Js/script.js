@@ -137,6 +137,8 @@ botaoDoLogin.addEventListener("click", () => {
     let errou = input.value;
     if(errou.length < 3) {
         alert("Coloque seu nome");
+    }else if(errou.length > 20){
+        alert("Esse nome é muito grande, Dimínua esse nome.");
     }else {
         recebeNome();
         doLoginParaOJogo();
